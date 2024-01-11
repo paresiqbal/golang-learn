@@ -1,7 +1,7 @@
-package main
+// package main
 
-import "fmt"
+// import "fmt"
 
-func main() {
-	fmt.Println("Gai guys")
-}
+// func main() {
+// 	fmt.Println("Gai guys")
+// }
