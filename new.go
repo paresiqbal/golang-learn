@@ -4,5 +4,9 @@ import "fmt"
 
 func main() {
 	name := "Golang"
-	fmt.Println(name)
+	lastName := "Gopher"
+
+	fullName := name + " " + lastName
+	fmt.Println(fullName)
+
 }
