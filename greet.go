@@ -7,3 +7,7 @@ var ages = []int{20, 30, 40, 50}
 func greet(name string) {
 	fmt.Println("My age is", name)
 }
+
+func showScore() {
+	fmt.Println("Your score", score)
+}
