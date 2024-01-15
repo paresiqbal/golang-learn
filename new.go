@@ -2,10 +2,15 @@ package main
 
 import "fmt"
 
-func main() {
-	name := []string{"Peter", "Paul", "Mary"}
+func greet(n string) {
+	fmt.Printf("Hello %v \n", n)
+}
 
-	for index, value := range name {
-		fmt.Printf("position at index %v is %v", index, value)
-	}
+func bye(n string) {
+	fmt.Printf("Bye %v \n", n)
+}
+
+func main() {
+	greet("Pares")
+	bye("Pares")
 }
