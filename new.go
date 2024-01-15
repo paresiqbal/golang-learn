@@ -1,10 +1,9 @@
 package main
 
-import "fmt"
-
-func greet(n string) {
-	fmt.Printf("Hello %v \n", n)
-}
+import (
+	"fmt"
+	"math"
+)
 
 func cycleName(n []string, f func(string)) {
 	for _, value := range n {
@@ -12,7 +11,20 @@ func cycleName(n []string, f func(string)) {
 	}
 }
 
+func greet(n string) {
+	fmt.Printf("Hello %v \n", n)
+}
+
+func circle(r float64) float64 {
+	return math.Pi * r * r
+}
+
 func main() {
-	greet("Pares")
 	cycleName([]string{"Pares", "Paul", "Paulo"}, greet)
+
+	a1 := circle(10.5)
+	a2 := circle(15)
+
+	fmt.Printf()
+	fmt.Println(a1, a2)
 }
