@@ -3,10 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	name := "Golang"
-	lastName := "Gopher"
+	var firstName string = "Pares"
+	var midleName = "Iqbal"
+	var lastName string
 
-	fullName := name + " " + lastName
-	fmt.Println(fullName)
+	fmt.Println(firstName, midleName, lastName)
 
+	lastName = "Prastowo"
+
+	fmt.Println(firstName, midleName, lastName)
 }
