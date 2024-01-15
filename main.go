@@ -1,7 +1,11 @@
-// package main
+package main
 
-// import "fmt"
+import "fmt"
 
-// func main() {
-// 	fmt.Println("Gai guys")
-// }
+func main() {
+	greet("Pares")
+
+	for _, value := range ages {
+		fmt.Println(value)
+	}
+}
