@@ -2,14 +2,14 @@ package main
 
 import "fmt"
 
-var score = 99.5
-
 func main() {
-	greet("Pares")
-
-	for _, value := range ages {
-		fmt.Println(value)
+	menu := map[string]float64{
+		"soup":    10.0,
+		"noodles": 15.0,
+		"rice":    20.0,
+		"curry":   25.0,
 	}
 
-	showScore()
+	fmt.Println(menu)
+	fmt.Println(menu["soup"])
 }
