@@ -2,31 +2,26 @@ package main
 
 import "fmt"
 
+func updateName(x string) string {
+	x = "Pares"
+	return x
+}
+
+func updateMenu(y map[string]float64) {
+	y["coffe"] = 3.99
+}
+
 func main() {
+	name := "Risti"
+	name = updateName(name)
+
+	fmt.Println(name)
+
 	menu := map[string]float64{
-		"soup":    10.0,
-		"noodles": 15.0,
-		"rice":    20.0,
-		"curry":   25.0,
+		"Pizza": 10.0,
+		"Pasta": 15.0,
 	}
 
+	updateMenu(menu)
 	fmt.Println(menu)
-	fmt.Println(menu["soup"])
-
-	for key, value := range menu {
-		fmt.Println(key, value)
-	}
-
-	phoneBook := map[int]string{
-		100: "John",
-		200: "Paul",
-		300: "George",
-		400: "Ringo",
-	}
-
-	fmt.Println(phoneBook)
-	fmt.Println(phoneBook[100])
-
-	phoneBook[200] = "Pares"
-	fmt.Println(phoneBook)
 }
